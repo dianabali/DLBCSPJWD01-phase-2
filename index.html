@@ -1,0 +1,53 @@
+<!-- Homepage -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Babblu</title>
+</head>
+<body>
+    <!-- Nav bar component (Bootstrap) -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand p-4" href="index.html">
+                <img src="./img/logo.png" alt="Logo" style="max-height: 70px;">
+            </a>
+            
+            <div class="collapse navbar-collapse fs-5 pt-3" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-2" href="profile.html"><b>Profile</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="toggle" class="btn btn-toggle"><b>Text to speech</b></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 'text-to-speech' text box -->
+    <div class="container">
+        <div id="text-box" class="text-box">
+            <div id="close" class="close">X</div>
+            <h3>Choose voice</h3>
+            <select id="voices"></select>
+            <textarea id="text" placeholder="Enter text..."></textarea>
+            <button class="btn" id="read">Read Text</button>
+        </div>
+
+        <!-- Where the JS applies -->
+        <main></main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

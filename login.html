@@ -1,0 +1,67 @@
+<!-- Log in page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMt23cez/3paNdF+e5hZl5a7j8b6d1c5d2k5p4" crossorigin="anonymous">
+    <title>Log in</title>
+
+    <style>
+        .h-custom {
+            height: 100%;
+        }
+        @media (max-width: 450px) {
+            .h-custom {
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="vh-100" style="background-color: #e4f3ff;">
+        <div class="container-fluid h-custom">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+
+                <!-- Logo sction -->
+                <div class="d-flex justify-content-center align-items-center col-md-8 col-lg-6 col-xl-4">
+                    <img src="./img/logo.png" id="logo-img" class="img-fluid" alt="Sample image">
+                </div>
+
+                <!-- Log-in form section -->
+                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                    <form>
+                        <!-- Email input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <label class="form-label" for="form3Example3">Email address</label>
+                            <input type="email" id="form3Example3" class="form-control form-control-lg" placeholder="Enter your email address" />
+                        </div>
+
+                        <!-- Password input -->
+                        <div data-mdb-input-init class="form-outline mb-3"> 
+                            <label class="form-label" for="form3Example4">Password</label>
+                            <input type="password" id="form3Example4" class="form-control form-control-lg" placeholder="Enter password" />      
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Remember me checkbox -->
+                            <div class="form-check mb-0">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                                <label class="form-check-label" for="form2Example3">Remember me</label>
+                            </div>
+                        </div>
+
+                        <!-- Sign up if no account -->
+                        <div class="text-center text-lg-start mt-4 pt-2">
+                            <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem; background-color: #004aad; color: white;">Login</button>
+                            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!" class="link-danger">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
