@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #ffefea;
+    background: #eeffe2;
     font-family: 'Ancizar Sans', sans-serif;
     min-height: 100vh;
     margin: 0;
@@ -22,7 +22,7 @@ h1 {
 
 .btn {
     cursor: pointer;
-    background-color: darksalmon;
+    background-color: #44791e;
     border: 0;
     border-radius: 4px;
     color: white;
@@ -50,7 +50,7 @@ h1 {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -800px);
-    background-color: #333;
+    background-color: #6db43b;
     color: white;
     padding: 20px;
     border-radius: 5px;
@@ -62,7 +62,7 @@ h1 {
 }
 
 .text-box select {
-    background-color: darksalmon;
+    background-color: #44791e;
     border: 0;
     color: white;
     font-size: 12px;
@@ -92,12 +92,12 @@ h1 {
 
 main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Repeat 1fr four times */
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
 }
 
 .box {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px #44791e;
     border-radius: 5px;
     cursor: pointer;
     display: flexbox;
@@ -107,7 +107,7 @@ main {
 }
 
 .box.active {
-    box-shadow: 0 0 10px 5px darksalmon;
+    box-shadow: 0 0 10px 5px #44791e;
 }
 
 .box img {
@@ -116,7 +116,7 @@ main {
 }
 
 .box .info {
-    background-color: darksalmon;
+    background-color: #44791e;
     color: white;
     font-size: 18px;
     letter-spacing: 1px;
